@@ -6,6 +6,10 @@ public class Equalizer {
 
     static Random rnd=new Random();
     public static void main(String[] args) {
+        equalizer5();
+    }
+
+    private static void equalizer5() {
         eq();
         eq(12);
         eq();
@@ -14,19 +18,14 @@ public class Equalizer {
     }
     public static void eq(){
         int db=rnd.nextInt(3,8);
-        String Szín="\u001B[45m";
-        for (int i=0;i<db;i++) {
-        System.out.print(Szín+"");
-        
-        }
-        System.out.print("\n");
+        eq(db);
 
     }
 
     private static void eq(int a) {
-        String Szín="\u001B[45m";
+        String szín="*";
         for (int i=0;i<a;i++) {
-        System.out.print(Szín+"");
+        System.out.print(szín+"");
         
         }
         System.out.print("\n");
