@@ -1,17 +1,17 @@
 
-package javaapplication4;
+package java_oraimunka;
 
 
-public class JavaApplication4 {
+public class java_oraimunka {
 
 
     public static void main(String[] args) {
-        fo();
+        elso10Szamosszeg();
         osszead(1,2);
         kiir();
     }
     
-    private static int fo(){
+    private static int elso10Szamosszeg(){
         int osszeg=0;
         for (int i=0;i<10;i++ ){
             osszeg+=i;
