@@ -8,7 +8,7 @@ public class java_oraimunka {
     public static void main(String[] args) {
         elso10Szamosszeg();
         osszead(1,2);
-        kiir();
+        kiir("Hello world");
     }
     
     private static int elso10Szamosszeg(){
