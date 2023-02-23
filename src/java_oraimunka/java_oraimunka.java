@@ -6,7 +6,7 @@ public class java_oraimunka {
 
 
     public static void main(String[] args) {
-        elso10Szamosszeg();
+        int szam=elso10Szamosszeg();
         osszead(1,2);
         kiir("Hello world");
     }
