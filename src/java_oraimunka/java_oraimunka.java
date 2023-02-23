@@ -19,10 +19,16 @@ public class java_oraimunka {
         osszeg +=osszead(3,4);
         //osszeg=osszeadas(szam1,szam2,osszeg,elso10Szamosszeg());
         kiir("1+2+3+4="+osszeg+"\n");
-        osszeg=osszead(1, osszead(2 osszead(3,4)));
+        osszeg=osszead(1, osszead(2 ,osszead(3,4)));
         kiir("1+2+3+4="+osszeg+"\n");
-        osszeg=gyok();
-        
+        //osszeg=gyok();
+        int a=3 , b=4 , c=2;
+        osszeg=osszead(a,b);
+        osszeg=osszead(osszeg,c);
+        String s="%d+%d+%d gyoke:".formatted(a,b,c);
+        double gyok= Math.sqrt(osszeg);
+        kimenet = String.format("%s %.4f\n",s,gyok);
+        kiir(kimenet);
         
     }
     
@@ -43,8 +49,8 @@ public class java_oraimunka {
         szam1=szam1+szam2+osszeg+elso10;
         return szam1;
     }
-    private static int gyok(int szam1, int szam2, int szam3){
-        
-    }
+    //private static int gyok(int szam1, int szam2, int szam3){
+    //    
+    //}
 
 }
