@@ -6,9 +6,13 @@ public class java_oraimunka {
 
 
     public static void main(String[] args) {
-        int szam=elso10Szamosszeg();
+        int osszeg=elso10Szamosszeg();
+        String kimenet= "Az első 10 szám összege:" +osszeg+"\n"; 
         osszead(1,2);
-        kiir("Hello world");
+        kiir(kimenet);
+        int szam1=7 ,szam2=4;
+        osszeg= osszead(szam1, szam2);
+        kiir("%d + %d=%d\n" .formatted(szam1,szam2,osszeg));
     }
     
     private static int elso10Szamosszeg(){
@@ -24,5 +28,6 @@ public class java_oraimunka {
     private static void kiir(String szoveg){
         System.out.print(szoveg);
     }
+    private static int osszeadas
     
 }
