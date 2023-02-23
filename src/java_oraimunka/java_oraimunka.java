@@ -9,6 +9,25 @@ public class java_oraimunka {
         int osszeg=elso10Szamosszeg();
         String kimenet= "Az első 10 szám összege:" +osszeg+"\n"; 
         kiir(kimenet);
+        osszead();
+        gyokmet();
+        
+    }
+
+    private static void gyokmet() {
+        int osszeg;
+        String kimenet;
+        int a=3 , b=4 , c=2;
+        osszeg=osszead(a,b);
+        osszeg=osszead(osszeg,c);
+        String s="%d+%d+%d gyoke:".formatted(a,b,c);
+        double gyok= Math.sqrt(osszeg);
+        kimenet = String.format("%s %.4f\n",s,gyok);
+        kiir(kimenet);
+    }
+
+    private static void osszead() {
+        int osszeg;
         int szam1=7 ,szam2=4;
         osszeg= osszead(szam1, szam2);
         kiir("%d + %d=%d\n" .formatted(szam1,szam2,osszeg));
@@ -21,15 +40,6 @@ public class java_oraimunka {
         kiir("1+2+3+4="+osszeg+"\n");
         osszeg=osszead(1, osszead(2 ,osszead(3,4)));
         kiir("1+2+3+4="+osszeg+"\n");
-        //osszeg=gyok();
-        int a=3 , b=4 , c=2;
-        osszeg=osszead(a,b);
-        osszeg=osszead(osszeg,c);
-        String s="%d+%d+%d gyoke:".formatted(a,b,c);
-        double gyok= Math.sqrt(osszeg);
-        kimenet = String.format("%s %.4f\n",s,gyok);
-        kiir(kimenet);
-        
     }
     
     private static int elso10Szamosszeg(){
