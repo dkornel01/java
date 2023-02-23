@@ -1,20 +1,28 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package java_oraimunka;
 
-/**
- *
- * @author Dobrocsi Kornél
- */
+import java.util.Random;
 public class Equalizer {
 
-    /**
-     * @param args the command line arguments
-     */
+    static Random rnd=new Random();
     public static void main(String[] args) {
-        // TODO code application logic here
+        eq();
+        eq(12);
+        eq();
+        eq(8);
+        eq();
+    }
+    public static void eq(){
+        int db=rnd.nextInt(3,8);
+        String Szín="\u001B[45m";
+        for (int i=0;i<db;i++) {
+        System.out.print("*"+"");
+        
+        }
+        System.out.print("\n");
+        
+        
+        
     }
     
 }
