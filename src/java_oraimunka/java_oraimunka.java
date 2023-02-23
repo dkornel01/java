@@ -12,7 +12,8 @@ public class java_oraimunka {
         int szam1=7 ,szam2=4;
         osszeg= osszead(szam1, szam2);
         kiir("%d + %d=%d\n" .formatted(szam1,szam2,osszeg));
-        osszeadas(szam1,szam2,osszeg,elso10Szamosszeg());
+        osszeg=osszeadas(szam1,szam2,osszeg,elso10Szamosszeg());
+        kiir("1+2+3+4="+osszeg+"\n");
     }
     
     private static int elso10Szamosszeg(){
