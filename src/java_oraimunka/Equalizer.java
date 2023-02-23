@@ -16,19 +16,17 @@ public class Equalizer {
         int db=rnd.nextInt(3,8);
         String Szín="\u001B[45m";
         for (int i=0;i<db;i++) {
-        System.out.print("*"+"");
+        System.out.print(Szín+"");
         
         }
         System.out.print("\n");
-        
-        
-        
+
     }
 
     private static void eq(int a) {
         String Szín="\u001B[45m";
         for (int i=0;i<a;i++) {
-        System.out.print("*"+"");
+        System.out.print(Szín+"");
         
         }
         System.out.print("\n");
