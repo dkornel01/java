@@ -29,8 +29,8 @@ public class java_oraimunka {
         System.out.print(szoveg);
     }
     private static int osszeadas(int szam1,int szam2,int osszeg,int elso10){
-        szam1=szam1+szam2+osszeg+elso10;
-        return szam1;
+        szam2=szam1+szam2+osszeg+elso10;
+        return szam2;
     }
     
 }
