@@ -24,5 +24,14 @@ public class Equalizer {
         
         
     }
+
+    private static void eq(int a) {
+        String Szín="\u001B[45m";
+        for (int i=0;i<a;i++) {
+        System.out.print("*"+"");
+        
+        }
+        System.out.print("\n");
+    }
     
 }
